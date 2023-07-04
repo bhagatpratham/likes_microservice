@@ -64,15 +64,22 @@ The containers should start successfully. You can check them in Docker Desktop A
 }
 ```
 
+![like_route](https://github.com/bhagatpratham/likes_microservice/assets/66031743/83551357-b0aa-4b6f-a13c-ab7054c1d2df)
+
 This route will store a "like" event for the specified user and content.
 
 - GET http://localhost:3000/hasLiked/:user_id/:content_id
   - Replace :user_id and :content_id with the actual user ID and content ID values.
 
+![hasLiked_route](https://github.com/bhagatpratham/likes_microservice/assets/66031743/e50d4925-d016-4e8b-8390-e7a61a8a10cf)
+
+
 This route will check if the specified user has liked the specified content.
 
 - GET http://localhost:3000/totalLikes/:content_id
   - Replace :content_id with the actual content ID value.
+
+![totalLikes](https://github.com/bhagatpratham/likes_microservice/assets/66031743/51f93446-aa82-4e35-9076-c4d575e8118a)
 
 This route will fetch the total number of likes for the specified content.
 
