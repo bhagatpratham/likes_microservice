@@ -84,10 +84,7 @@ This route will fetch the total number of likes for the specified content.
 
 ## Functional Tests
 
-Prerequisites
-Before running the functional tests, make sure you have completed the following steps:
-
-- Set up the application by following the instructions mentioned above.
+- Make sure you have set up the application by following the instructions mentioned above.
 
 ### Running the Functional Tests
 
