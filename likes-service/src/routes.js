@@ -9,6 +9,13 @@ router.post("/like", async (req, res) => {
 
   try {
     await db.storeLikeEvent(user_id, content_id);
+    // Placeholder code for sending push notification
+    if ((await db.getTotalLikesForContent(content_id)) === 100) {
+      console.log(
+        `User ${user_id} has received 100 likes! Sending push notification...`
+      );
+      // we can write here the actual logic to send a push notification
+    }
     res.status(200).send(`User ${user_id} liked the post ${content_id}`);
   } catch (error) {
     console.error("Error storing Like event:", error);
