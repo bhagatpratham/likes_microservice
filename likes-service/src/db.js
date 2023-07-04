@@ -4,19 +4,6 @@ const config = require("./config.json");
 const pool = new Pool(config.database);
 
 // Store a Like event in the database
-// async function storeLikeEvent(userId, contentId) {
-//   const query = "INSERT INTO likes (user_id, content_id) VALUES ($1, $2)";
-//   const values = [userId, contentId];
-//   await pool.query(query, values);
-
-//   const totalLikes = await getTotalLikesForContent(content_id);
-//   if (totalLikes === 10) {
-//     // Placeholder code for sending push notification
-//     console.log(
-//       `Sending push notification to user ${user_id} for reaching 100 likes on content ${content_id}`
-//     );
-//   }
-// }
 async function storeLikeEvent(user_id, content_id) {
   try {
     const query = "INSERT INTO likes (user_id, content_id) VALUES ($1, $2)";

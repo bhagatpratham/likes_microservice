@@ -20,24 +20,24 @@
 3. Install all the dependencies by running the following command `npm install`
 4. Update the `config.json` file
 
-   - Open the project folder and navigate to the `likes-service/src` directory.
+   - Open the project folder in your preferred text editor and navigate to the `likes-service/src` directory.
    - Locate the `config.json` file and open it
 
      **Update the following fields in the config.json file with your own PostgreSQL information:**
 
      ```
-     {
-     "database": {
-         "host": "db",
-         "port": 5432,
-         "database": "likes", // DATABASE_NAME
-         "user": "postgres", // USER_NAME
-         "password": "pra123156" // Password
-     }
-     }
+      {
+        "database": {
+          "host": "db",
+          "port": 5432,
+          "database": "likes",
+          "user": "postgres",
+          "password": "pra123156"
+        }
+      }
      ```
 
-   Your updated `config.json` file should reflect the correct PostgreSQL connection details.
+   Your updated `config.json` file should reflect your correct PostgreSQL connection details.
 
 5. Running the Containers and Database
 
@@ -72,7 +72,6 @@ This route will store a "like" event for the specified user and content.
   - Replace :user_id and :content_id with the actual user ID and content ID values.
 
 ![hasLiked_route](https://github.com/bhagatpratham/likes_microservice/assets/66031743/e50d4925-d016-4e8b-8390-e7a61a8a10cf)
-
 
 This route will check if the specified user has liked the specified content.
 
